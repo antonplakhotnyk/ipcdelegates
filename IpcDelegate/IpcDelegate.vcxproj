@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7EA1B8A5-7129-4691-9D22-F6FDE0A0EF0A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>IpcDelegate</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AtomicInt.h" />
+    <ClInclude Include="AVCompilerSpecific.h" />
+    <ClInclude Include="AVInternal_NS.h" />
+    <ClInclude Include="AVLog.h" />
+    <ClInclude Include="AVLogMsg.h" />
+    <ClInclude Include="AVLogMsgFormat.h" />
+    <ClInclude Include="AVLogSimple.h" />
+    <ClInclude Include="AVMacros.h" />
+    <ClInclude Include="AVNotifyBase.h" />
+    <ClInclude Include="AVObject.h" />
+    <ClInclude Include="AVPreprocessorRepeatJoin.h" />
+    <ClInclude Include="AVRefCounter.h" />
+    <ClInclude Include="AVTimer.h" />
+    <ClInclude Include="AVWeakBase.h" />
+    <ClInclude Include="DelegateW.h" />
+    <ClInclude Include="DelegateWCaller.h" />
+    <ClInclude Include="DelegateWCaller_Default.h" />
+    <ClInclude Include="DelegateWCaller_Simple.h" />
+    <ClInclude Include="DelegateWDeferredCall.h" />
+    <ClInclude Include="DelegateWDeferredCall_N.h" />
+    <ClInclude Include="DelegateW_N.h" />
+    <ClInclude Include="DelegateW_N1.h" />
+    <ClInclude Include="ErrorPool.h" />
+    <ClInclude Include="IpcCall.h" />
+    <ClInclude Include="IpcCallBindlObj.h" />
+    <ClInclude Include="IpcCallBindlObjN1.h" />
+    <ClInclude Include="IpcCallBindlObjN2.h" />
+    <ClInclude Include="IpcCallBindlObjN3.h" />
+    <ClInclude Include="IpcCallBindlObjN4.h" />
+    <ClInclude Include="IpcCallDataStream.h" />
+    <ClInclude Include="IpcCallPacket.h" />
+    <ClInclude Include="IpcCallTransport.h" />
+    <ClInclude Include="IpcDelegateGeneral.h" />
+    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="OPtr.h" />
+    <ClInclude Include="SO.h" />
+    <ClInclude Include="SOW.h" />
+    <ClInclude Include="SOW_N.h" />
+    <ClInclude Include="SO_N.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="ThreadLocalStoregePtr.h" />
+    <ClInclude Include="WPtr.h" />
+    <ClInclude Include="WPtrShared.h" />
+    <ClInclude Include="XPtrBase.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AVLog.cpp" />
+    <ClCompile Include="AVLogMsg.cpp" />
+    <ClCompile Include="AVLogMsgFormat.cpp" />
+    <ClCompile Include="AVLogSimple.cpp" />
+    <ClCompile Include="AVNotifyBase.cpp" />
+    <ClCompile Include="AVRefCounter.cpp" />
+    <ClCompile Include="AVTimer.cpp" />
+    <ClCompile Include="AVWeakBase.cpp" />
+    <ClCompile Include="DelegateW.cpp" />
+    <ClCompile Include="DelegateWCaller.cpp" />
+    <ClCompile Include="DelegateWCaller_Default.cpp" />
+    <ClCompile Include="DelegateWCaller_Simple.cpp" />
+    <ClCompile Include="ErrorPool.cpp" />
+    <ClCompile Include="IpcCall.cpp" />
+    <ClCompile Include="IpcCallBindlObj.cpp" />
+    <ClCompile Include="IpcCallDataStream.cpp" />
+    <ClCompile Include="IpcCallPacket.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="XPtrBase.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
