@@ -33,6 +33,15 @@
     <ClInclude Include="IpcTcpTransportQt.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ScopedPtrQtSafe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PostInterThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SynchroLock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -51,6 +60,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="IpcTcpTransportQt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PostInterThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SynchroLock.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

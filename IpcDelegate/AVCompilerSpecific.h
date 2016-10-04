@@ -11,9 +11,9 @@
 
 // #define __cdecl
 // #define __stdcall
-#define _T
+//#define _T
 
-// static int GetCurrentThreadId(){ return 0; };
+// static int AVGetCurrentThreadId(){ return 0; };
 
 // У майкрософта в имя функции класса входит так же имя класса
 //#define __FUNCTION__ __PRETTY_FUNCTION__

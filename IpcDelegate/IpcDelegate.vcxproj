@@ -146,6 +146,8 @@
     <ClInclude Include="DelegateW_N.h" />
     <ClInclude Include="DelegateW_N1.h" />
     <ClInclude Include="ErrorPool.h" />
+    <ClInclude Include="EventgateW.h" />
+    <ClInclude Include="FunctgateW.h" />
     <ClInclude Include="IpcCall.h" />
     <ClInclude Include="IpcCallBindlObj.h" />
     <ClInclude Include="IpcCallBindlObjN1.h" />
@@ -157,12 +159,15 @@
     <ClInclude Include="IpcCallTransport.h" />
     <ClInclude Include="IpcDelegateGeneral.h" />
     <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="LockInt.h" />
     <ClInclude Include="OPtr.h" />
+    <ClInclude Include="AVPlatformSpecific.h" />
     <ClInclude Include="SO.h" />
     <ClInclude Include="SOW.h" />
     <ClInclude Include="SOW_N.h" />
     <ClInclude Include="SO_N.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SynchroLockSection.h" />
     <ClInclude Include="ThreadLocalStoregePtr.h" />
     <ClInclude Include="WPtr.h" />
     <ClInclude Include="WPtrShared.h" />
@@ -186,12 +191,15 @@
     <ClCompile Include="IpcCallBindlObj.cpp" />
     <ClCompile Include="IpcCallDataStream.cpp" />
     <ClCompile Include="IpcCallPacket.cpp" />
+    <ClCompile Include="LockInt.cpp" />
+    <ClCompile Include="AVPlatformSpecific.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SynchroLockSection.cpp" />
     <ClCompile Include="XPtrBase.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

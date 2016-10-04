@@ -147,6 +147,21 @@
     <ClInclude Include="AVLogMsg.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="EventgateW.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctgateW.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LockInt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SynchroLockSection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AVPlatformSpecific.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -204,6 +219,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AVLogMsg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LockInt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SynchroLockSection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AVPlatformSpecific.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

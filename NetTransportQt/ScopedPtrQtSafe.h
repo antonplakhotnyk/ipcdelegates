@@ -1,6 +1,6 @@
 #pragma once
 
-#include <QPointer>
+#include <QtCore/QPointer>
 
 // Нужен чтобы контролировать RefCounter-ом время жизни QObject-а у которого есть parent
 //

@@ -11,7 +11,7 @@ public:
 private:
 
 	void TimeStamp(uint64_t* tik, uint64_t* freq) final;
-	size_t ThreadId() override;
+	size_t ThreadId() final;
 	uint32_t MessageNumber() final;
 	void WriteMessage(const char* msg, size_t msg_char_count) final;
 	const AVLog::Options& GetOptions() final;

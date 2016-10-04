@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "IpcClientNet.h"
+#include "AVPlatformSpecific.h"
 
 IpcClientNet* IpcClientNet::s_instance=NULL;
 
@@ -8,7 +9,7 @@ IpcClientNet::IpcClientNet(void)
 	assert_if_not_equal(s_instance,NULL);
 	s_instance = this;
 
-	m_constructor_thread_id = GetCurrentThreadId();
+	m_constructor_thread_id = AVGetCurrentThreadId();
 
 	m_transport = new IpcClientTcpTransport;
 	m_ipc_call = new SO<IpcCall>(m_transport);
@@ -58,7 +59,7 @@ void IpcClientNet::OnPostInterThread()
 
 void IpcClientNet::SendLog(const char* msg, int msg_char_count)
 {
-	if( GetCurrentThreadId() == m_constructor_thread_id )
+	if( AVGetCurrentThreadId() == m_constructor_thread_id )
 	{
 		std::vector<std::string> thread_messages;
 		{

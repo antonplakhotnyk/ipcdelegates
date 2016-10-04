@@ -1,6 +1,6 @@
 #pragma once
 
-#include <string>
+#include <stdint.h>
 
 #include "AVCompilerSpecific.h"
 

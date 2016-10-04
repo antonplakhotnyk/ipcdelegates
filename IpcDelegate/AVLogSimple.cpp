@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "AVLogSimple.h"
 #include "AVTimer.h"
+#include "AVPlatformSpecific.h"
 
 
 AVLogSimple::AVLogSimple()
@@ -22,7 +23,7 @@ void AVLogSimple::TimeStamp(uint64_t* tik, uint64_t* freq)
 
 size_t AVLogSimple::ThreadId()
 {
-	return 0;
+	return AVGetCurrentThreadId();
 }
 
 uint32_t AVLogSimple::MessageNumber()
